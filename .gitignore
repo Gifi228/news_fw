@@ -1,0 +1,10 @@
+/venv
+/.idea
+.idea
+/.idea/.gitignore
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/modules.xml
+/.idea/web_blog_17_00.iml
+blog/__pycache__/urls.cpython-311.pyc
+blog/__pycache__/views.cpython-311.pyc
