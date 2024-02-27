@@ -22,9 +22,9 @@
                             <b>Категория: <a href="{% url 'category' article.pk %}">{{ article.category.title }}</a></b>
                         </div>
                         <div>
-                            <a href="" class="btn btn-danger">Удалить</a>
-                            <a href="" class="btn btn-warning">Изменить</a>
-                            <a href="" class="btn btn-success">Назад</a>
+                            <a href="{% url 'delete_article' article.pk %}" class="btn btn-danger">Удалить</a>
+                            <a href="{% url 'update_article' article.pk %}" class="btn btn-warning">Изменить</a>
+                            <a href="{% url 'index' %}" class="btn btn-success">Назад</a>
                         </div>
                     </div>
                 </div>

@@ -11,5 +11,13 @@ urlpatterns = [
     path('our_team/', our_teams_page_view, name='our_team'),
     path('services/', our_services_page_view, name='services'),
 
-    path('add_article/', add_article, name='add_article')
+    path('add_article/', add_article, name='add_article'),
+
+    path('register/', register_user_view, name='register'),
+    path('login/', login_user_view, name='login'),
+    path('logout/', logout_user_view, name='logout'),
+
+    path('update_article/<int:article_id>/', update_article_view, name='update_article'),
+    path('delete_article/<int:article_id>', article_delete, name='delete_article'),
+    path('profile/<int:user_id>', profile_view, name='profile')
 ]
